@@ -42,7 +42,7 @@ namespace TelCoColorCoder
 	     for(uint pairNum = 1; pairNum <= c_MAXPAIRNUM; pairNum++)
 	     {
 		     ColorPair currentColorPair = GetColorFromPairNumber(pairNum);
-		     std::cout <<"   "<<pairNum<<"       "<< currentColorPair.ToString().resize(6)<< std::endl;
+		     std::cout <<"   "<<pairNum<<"       "<< currentColorPair.ToString()<< std::endl;
 		     
 	     }
      }

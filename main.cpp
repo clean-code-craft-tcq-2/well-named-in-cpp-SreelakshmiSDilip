@@ -45,6 +45,7 @@ namespace TelCoColorCoder
 	int main()
 	{
 		PrintColorCodingReferenceManual();
+		stf::cout << "main() called";
 		return 0;
 	}
 }

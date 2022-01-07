@@ -1,5 +1,6 @@
 #include <iostream>
 #include <assert.h>
+#include <string>
 #include "ColorCode.h"
 
 namespace TelCoColorCoder
@@ -23,7 +24,7 @@ namespace TelCoColorCoder
                 colorPairStr += MinorColorNames[minorColor];
                 return colorPairStr;
             }
-
+	
     ColorPair GetColorFromPairNumber(int pairNumber) {
         int zeroBasedPairNumber = pairNumber - 1;
         MajorColor majorColor = 
@@ -41,7 +42,7 @@ namespace TelCoColorCoder
 	     for(uint pairNum = 1; pairNum <= c_MAXPAIRNUM; pairNum++)
 	     {
 		     ColorPair currentColorPair = GetColorFromPairNumber(pairNum);
-		     std::cout <<"   "<<pairNum<<"       "<< currentColorPair.ToString()<< std::endl;
+		     std::cout <<"   "<<pairNum<<"       "<< currentColorPair.ToString().resize(6)<< std::endl;
 		     
 	     }
      }

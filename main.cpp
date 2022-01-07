@@ -39,7 +39,7 @@ namespace TelCoColorCoder
 	     for(uint pairNum = 0; pairNum < 25; pairNum++)
 	     {
 		     ColorPair CurrentColorPair = GetColorFromPairNumber(pairNum);
-		     std::cout << pairNum << CurrentColorPair.getMajor() << CurrentColorPair.getMinor();
+		     std::cout << pairNum << CurrentColorPair.getMajor() << CurrentColorPair.getMinor() << std::endl;;
 	     }
      }
 	int main()

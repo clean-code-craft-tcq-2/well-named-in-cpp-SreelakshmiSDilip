@@ -18,7 +18,7 @@ namespace TelCoColorCoder
 
 	 std::string ColorPair:: ToString() {
                 std::string colorPairStr = MajorColorNames[majorColor];
-                colorPairStr += " ";
+                colorPairStr += "    ";
                 colorPairStr += MinorColorNames[minorColor];
                 return colorPairStr;
             }
@@ -40,7 +40,7 @@ namespace TelCoColorCoder
 	     for(uint pairNum = 1; pairNum <= 25; pairNum++)
 	     {
 		     ColorPair currentColorPair = GetColorFromPairNumber(pairNum);
-		     std::cout <<"   "<<pairNum<<"    "<< currentColorPair.ToString()<< std::endl;
+		     std::cout <<"   "<<pairNum<<"        "<< currentColorPair.ToString()<< std::endl;
 		     
 	     }
      }

@@ -47,23 +47,7 @@ namespace TelCoColorCoder
     int GetPairNumberFromColor(MajorColor major, MinorColor minor) {
         return major * numberOfMinorColors + minor + 1;
     }
-     void PrintColorCodingReferenceManual()
-     {
-	     std::cout <<"PairNumber " << "Major"<<" " <<"Minor"<< std::endl;
-	     for(uint pairNum = 1; pairNum <= c_MAXPAIRNUM; pairNum++)
-	     {
-		     ColorPair currentColorPair = GetColorFromPairNumber(pairNum);
-		     if(pairNum < 10)
-		     {
-		         std::cout <<"    "<<pairNum<<"       "<< currentColorPair.ToString()<< std::endl;
-		     }
-		     else
-		     {
-			     std::cout <<"   "<<pairNum<<"       "<< currentColorPair.ToString()<< std::endl;
-		     }
-		     
-	     }
-     }
+
 }
 
 

@@ -4,7 +4,8 @@
 #include <assert.h>
 #include "ColorCode.h"
 
-
+const int c_MAXPAIRNUM = 25;
+const int c_TWODIGITSTARTINGINDEX = 10;
 
 void testNumberToPair(int pairNumber,
     TelCoColorCoder::MajorColor expectedMajor,
@@ -33,7 +34,7 @@ void testPairToNumber(
 	     for(uint pairNum = 1; pairNum <= c_MAXPAIRNUM; pairNum++)
 	     {
 		     TelCoColorCoder::ColorPair currentColorPair = TelCoColorCoder::GetColorFromPairNumber(pairNum);
-		     if(pairNum < 10)
+		     if(pairNum < c_TWODIGITSTARTINGINDEX)
 		     {
 		         std::cout <<"    "<<pairNum<<"       "<< currentColorPair.ToString()<< std::endl;
 		     }

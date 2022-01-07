@@ -37,10 +37,10 @@ namespace TelCoColorCoder
      void PrintColorCodingReferenceManual()
      {
 	     std::cout <<"PairNumber " << "Major Color "<< "Minor Color"<< std::endl;
-	     for(uint pairNum = 1; pairNum < 25; pairNum++)
+	     for(uint pairNum = 1; pairNum <= 25; pairNum++)
 	     {
 		     ColorPair currentColorPair = GetColorFromPairNumber(pairNum);
-		     std::cout <<    pairNum    <<    currentColorPair.ToString()<< std::endl;
+		     std::cout <<"   "<<pairNum<<"    "<< currentColorPair.ToString()<< std::endl;
 		     
 	     }
      }

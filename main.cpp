@@ -42,5 +42,10 @@ namespace TelCoColorCoder
 		     cout << pairNum << CurrentColorPair.majorColor << CurrentColorPair.minorColor;
 	     }
      }
+	int main()
+	{
+		PrintColorCodingReferenceManual();
+		return 0;
+	}
 }
 

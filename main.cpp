@@ -10,6 +10,7 @@ namespace TelCoColorCoder
 	const char* MinorColorNames[] = {
         "Blue", "Orange", "Green", "Brown", "State"
     };
+    const int c_MAXPAIRNUM = 25;
     int numberOfMajorColors =
         sizeof(MajorColorNames) / sizeof(MajorColorNames[0]);
 
@@ -36,8 +37,8 @@ namespace TelCoColorCoder
     }
      void PrintColorCodingReferenceManual()
      {
-	     std::cout <<"PairNumber " << "Major"<< "Minor"<< std::endl;
-	     for(uint pairNum = 1; pairNum <= 25; pairNum++)
+	     std::cout <<"PairNumber " << "Major"<<" " <<"Minor"<< std::endl;
+	     for(uint pairNum = 1; pairNum <= c_MAXPAIRNUM; pairNum++)
 	     {
 		     ColorPair currentColorPair = GetColorFromPairNumber(pairNum);
 		     std::cout <<"   "<<pairNum<<" "<< currentColorPair.ToString()<< std::endl;

@@ -42,9 +42,10 @@ namespace TelCoColorCoder
 		     std::cout << pairNum << CurrentColorPair.getMajor() << CurrentColorPair.getMinor() << std::endl;;
 	     }
      }
+}
 	int main()
 	{
-		PrintColorCodingReferenceManual();
+		TelCoColorCoder::PrintColorCodingReferenceManual();
 		std::cout << "main() called";
 		return 0;
 	}

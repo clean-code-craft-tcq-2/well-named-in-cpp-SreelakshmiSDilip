@@ -36,11 +36,12 @@ namespace TelCoColorCoder
     }
      void PrintColorCodingReferenceManual()
      {
-	     //std::cout <<"PairNumber " << "Major Color "<< "Minor Color";
-	     for(uint pairNum = 0; pairNum < 25; pairNum++)
+	     std::cout <<"PairNumber " << "Major Color "<< "Minor Color";
+	     //for(uint pairNum = 0; pairNum < 25; pairNum++)
 	     {
-		     ColorPair CurrentColorPair = GetColorFromPairNumber(pairNum);
-		     std::cout << pairNum << CurrentColorPair.ToString();//<< std::endl;
+		     ColorPair currentColorPair = GetColorFromPairNumber(pairNum);
+		     std::cout << pairNum << currentColorPair.ToString();//<< std::endl;
+		     
 	     }
      }
 }

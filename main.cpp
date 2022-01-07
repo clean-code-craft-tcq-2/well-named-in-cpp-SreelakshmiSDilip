@@ -11,7 +11,7 @@ namespace TelCoColorCoder
 	const char* MinorColorNames[] = {
         "Blue", "Orange", "Green", "Brown", "State"
     };
-    const int c_MAXPAIRNUM = 25;
+
     int numberOfMajorColors =
         sizeof(MajorColorNames) / sizeof(MajorColorNames[0]);
 

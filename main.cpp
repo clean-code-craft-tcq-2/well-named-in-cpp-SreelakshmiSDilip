@@ -39,7 +39,7 @@ namespace TelCoColorCoder
 	     std::cout <<"PairNumber " << "Major Color "<< "Minor Color";
 	     //for(uint pairNum = 0; pairNum < 25; pairNum++)
 	     {
-		     ColorPair currentColorPair = GetColorFromPairNumber(pairNum);
+		     ColorPair currentColorPair = GetColorFromPairNumber(1);
 		     std::cout << pairNum << currentColorPair.ToString();//<< std::endl;
 		     
 	     }

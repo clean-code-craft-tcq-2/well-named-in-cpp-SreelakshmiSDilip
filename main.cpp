@@ -26,7 +26,7 @@ namespace TelCoColorCoder
 		}
 		else if ((majorColor == 0) ||(majorColor == 2))
 		{
-			colorPairStr += "  "
+			colorPairStr += "  ";
 		}
 	       else
 		{

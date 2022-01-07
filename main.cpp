@@ -34,5 +34,13 @@ namespace TelCoColorCoder
     int GetPairNumberFromColor(MajorColor major, MinorColor minor) {
         return major * numberOfMinorColors + minor + 1;
     }
+     void PrintColorCodingReferenceManual()
+     {
+	     for(uint8 pairNum = 0; pairNum < 25; pairNum++)
+	     {
+		     ColorPair CurrentColorPair = GetColorFromPairNumber(pairNum);
+		     cout << pairNum << CurrentColorPair.majorColor << CurrentColorPair.minorColor;
+	     }
+     }
 }
 

@@ -27,6 +27,24 @@ void testPairToNumber(
     assert(pairNumber == expectedPairNumber);
 }
 
+ void PrintColorCodingReferenceManual()
+     {
+	     std::cout <<"PairNumber " << "Major"<<" " <<"Minor"<< std::endl;
+	     for(uint pairNum = 1; pairNum <= c_MAXPAIRNUM; pairNum++)
+	     {
+		     TelCoColorCoder::ColorPair currentColorPair = TelCoColorCoder::GetColorFromPairNumber(pairNum);
+		     if(pairNum < 10)
+		     {
+		         std::cout <<"    "<<pairNum<<"       "<< currentColorPair.ToString()<< std::endl;
+		     }
+		     else
+		     {
+			     std::cout <<"   "<<pairNum<<"       "<< currentColorPair.ToString()<< std::endl;
+		     }
+		     
+	     }
+     }
+
 int main() {
     testNumberToPair(4, TelCoColorCoder::WHITE, TelCoColorCoder::BROWN);
     testNumberToPair(5, TelCoColorCoder::WHITE, TelCoColorCoder::SLATE);

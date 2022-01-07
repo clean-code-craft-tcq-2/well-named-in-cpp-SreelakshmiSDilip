@@ -43,11 +43,5 @@ namespace TelCoColorCoder
 	     }
      }
 }
-	int main()
-	{
-		TelCoColorCoder::PrintColorCodingReferenceManual();
-		std::cout << "main() called";
-		return 0;
-	}
 
 

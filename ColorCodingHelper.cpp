@@ -11,6 +11,7 @@ namespace TelCoColorCoder
 	const char* MinorColorNames[] = {
         "Blue", "Orange", "Green", "Brown", "State"
     };
+	//Constants are declared for inserting whitespaces accordingly for proper formatting
 	const std::string threeSpaces = "    ";
 	const std::string twoSpaces = "  ";
 	const std::string singleSpace = " ";

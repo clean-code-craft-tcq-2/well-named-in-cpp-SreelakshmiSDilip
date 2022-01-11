@@ -22,20 +22,19 @@ void PrintColorCodingReferenceManual()
 {
     const int c_MAXPAIRNUM = 25;
     const int c_TWODIGITSTARTINGINDEX = 10;
-    const std::string c_FIVEWHITESPACES  = "     ";
-    const std::string c_THREEWHITESPACES = "   ";
-    const std::string c_SIXWHITESPACES   = "      ";
+    const std::string fiveSpaces  = "     ";
+    const std::string sixSpaces   = "      ";
     std::cout <<std::endl<<"*****Color Coding Reference Manual*****"<<std::endl<< "  PairNumber Major  Minor"<< std::endl;
     for(uint pairNum = 1; pairNum <= c_MAXPAIRNUM; pairNum++)
     {
         TelCoColorCoder::ColorPair currentColorPair = TelCoColorCoder::GetColorFromPairNumber(pairNum);
         if(pairNum < c_TWODIGITSTARTINGINDEX)
         {
-            std::cout <<c_SIXWHITESPACES<<pairNum<<c_SIXWHITESPACES<<currentColorPair.ToString()<< std::endl;
+            std::cout <<sixSpaces<<pairNum<<sixSpaces<<currentColorPair.ToString()<< std::endl;
         }
         else
         {
-            std::cout <<c_FIVEWHITESPACES<<pairNum<<c_SIXWHITESPACES<< currentColorPair.ToString()<< std::endl;
+            std::cout <<fiveSpaces<<pairNum<<sixSpaces<< currentColorPair.ToString()<< std::endl;
         }     
     }
 }

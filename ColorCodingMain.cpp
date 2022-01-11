@@ -40,7 +40,7 @@ void testPairToNumber(
 		     }
 		     else
 		     {
-			     std::cout <<"   "<<pairNum<<"       "<< currentColorPair.ToString()<< std::endl;
+		         std::cout <<"   "<<pairNum<<"       "<< currentColorPair.ToString()<< std::endl;
 		     }
 		     
 	     }

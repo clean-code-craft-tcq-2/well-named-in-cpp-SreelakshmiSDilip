@@ -8,37 +8,37 @@ namespace TelCoColorCoder
     const char* MajorColorNames[] = {
         "White", "Red", "Black", "Yellow", "Violet"
     };
-	const char* MinorColorNames[] = {
+    const char* MinorColorNames[] = {
         "Blue", "Orange", "Green", "Brown", "State"
     };
-	//Constants are declared for inserting whitespaces accordingly for proper formatting
-	const std::string threeSpaces = "    ";
-	const std::string twoSpaces = "  ";
-	const std::string singleSpace = " ";
+    //Constants are declared for inserting whitespaces accordingly for proper formatting
+    const std::string threeSpaces = "    ";
+    const std::string twoSpaces = "  ";
+    const std::string singleSpace = " ";
     int numberOfMajorColors =
         sizeof(MajorColorNames) / sizeof(MajorColorNames[0]);
 
     int numberOfMinorColors =
         sizeof(MinorColorNames) / sizeof(MinorColorNames[0]);
 
-	 std::string ColorPair:: ToString() {
-                std::string colorPairStr = MajorColorNames[majorColor];
-		if(majorColor == MajorColor::RED)
-		{
-                   colorPairStr += threeSpaces;
-		}
-		else if ((majorColor == MajorColor::WHITE) ||(majorColor == MajorColor::BLACK))
-		{
-			colorPairStr +=twoSpaces;
-		}
-	       else
-		{
-			colorPairStr += singleSpace;
-		}
-                colorPairStr += MinorColorNames[minorColor];
-                return colorPairStr;
-            }
-	
+    std::string ColorPair:: ToString() {
+        std::string colorPairStr = MajorColorNames[majorColor];
+        if(majorColor == MajorColor::RED)
+        {
+            colorPairStr += threeSpaces;
+        }
+        else if ((majorColor == MajorColor::WHITE) ||(majorColor == MajorColor::BLACK))
+        {
+            colorPairStr +=twoSpaces;
+        }
+        else
+        {
+            colorPairStr += singleSpace;
+        }
+        colorPairStr += MinorColorNames[minorColor];
+        return colorPairStr;
+    }
+
     ColorPair GetColorFromPairNumber(int pairNumber) {
         int zeroBasedPairNumber = pairNumber - 1;
         MajorColor majorColor = 

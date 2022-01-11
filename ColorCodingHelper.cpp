@@ -11,9 +11,9 @@ namespace TelCoColorCoder
 	const char* MinorColorNames[] = {
         "Blue", "Orange", "Green", "Brown", "State"
     };
-	const string threeSpaces = "    ";
-	const string twoSpaces = "  ";
-	const string singleSpace = " ";
+	const std::string threeSpaces = "    ";
+	const std::string twoSpaces = "  ";
+	const std::string singleSpace = " ";
     int numberOfMajorColors =
         sizeof(MajorColorNames) / sizeof(MajorColorNames[0]);
 

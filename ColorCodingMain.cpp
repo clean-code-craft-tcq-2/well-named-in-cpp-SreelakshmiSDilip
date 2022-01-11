@@ -22,7 +22,7 @@ void PrintColorCodingReferenceManual()
 {
     const int c_MAXPAIRNUM = 25;
     const int c_TWODIGITSTARTINGINDEX = 10;
-    const std::string c_FIVEWHITESPACES  = "      ";
+    const std::string c_FIVEWHITESPACES  = "     ";
     const std::string c_THREEWHITESPACES = "   ";
     const std::string c_SINGLEWHITESPACE = "  ";
     const std::string c_SIXWHITESPACES   = "      ";

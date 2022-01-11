@@ -1,15 +1,8 @@
-
-
 #include <iostream>
 #include <assert.h>
 #include "ColorCode.h"
 
-const int c_MAXPAIRNUM = 25;
-const int c_TWODIGITSTARTINGINDEX = 10;
-const std::string c_FOURWHITESPACES  = "    ";
-const std::string c_THREEWHITESPACES = "   ";
-const std::string c_SINGLEWHITESPACE = "  ";
-const std::string c_SEVENWHITESPACES = "       ";
+
 void testNumberToPair(int pairNumber,
     TelCoColorCoder::MajorColor expectedMajor,
     TelCoColorCoder::MinorColor expectedMinor)
@@ -33,6 +26,12 @@ void testPairToNumber(
 
  void PrintColorCodingReferenceManual()
      {
+	     const int c_MAXPAIRNUM = 25;
+             const int c_TWODIGITSTARTINGINDEX = 10;
+             const std::string c_FOURWHITESPACES  = "    ";
+             const std::string c_THREEWHITESPACES = "   ";
+             const std::string c_SINGLEWHITESPACE = "  ";
+             const std::string c_SEVENWHITESPACES = "       ";
 	     std::cout <<std::endl<<"*****Color Coding Reference Manual*****"<<std::endl<< "PairNumber " << "Major"<<c_SINGLEWHITESPACE <<"Minor"<< std::endl;
 	     for(uint pairNum = 1; pairNum <= c_MAXPAIRNUM; pairNum++)
 	     {

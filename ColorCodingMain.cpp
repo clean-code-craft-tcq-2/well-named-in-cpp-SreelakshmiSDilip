@@ -18,28 +18,28 @@ void testPairToNumber(TelCoColorCoder::MajorColor major,TelCoColorCoder::MinorCo
     assert(pairNumber == expectedPairNumber);
 }
 
- void PrintColorCodingReferenceManual()
-     {
-	     const int c_MAXPAIRNUM = 25;
-             const int c_TWODIGITSTARTINGINDEX = 10;
-             const std::string c_FOURWHITESPACES  = "    ";
-             const std::string c_THREEWHITESPACES = "   ";
-             const std::string c_SINGLEWHITESPACE = "  ";
-             const std::string c_SEVENWHITESPACES = "       ";
-	     std::cout <<std::endl<<"*****Color Coding Reference Manual*****"<<std::endl<< "PairNumber " << "Major"<<c_SINGLEWHITESPACE <<"Minor"<< std::endl;
-	     for(uint pairNum = 1; pairNum <= c_MAXPAIRNUM; pairNum++)
-	     {
-		     TelCoColorCoder::ColorPair currentColorPair = TelCoColorCoder::GetColorFromPairNumber(pairNum);
-		     if(pairNum < c_TWODIGITSTARTINGINDEX)
-		     {
-		         std::cout <<c_FOURWHITESPACES<<pairNum<<c_SEVENWHITESPACES<<currentColorPair.ToString()<< std::endl;
-		     }
-		     else
-		     {
-		         std::cout <<c_THREEWHITESPACES<<pairNum<<c_SEVENWHITESPACES<< currentColorPair.ToString()<< std::endl;
-		     }     
-	     }
-     }
+void PrintColorCodingReferenceManual()
+{
+    const int c_MAXPAIRNUM = 25;
+    const int c_TWODIGITSTARTINGINDEX = 10;
+    const std::string c_FOURWHITESPACES  = "    ";
+    const std::string c_THREEWHITESPACES = "   ";
+    const std::string c_SINGLEWHITESPACE = "  ";
+    const std::string c_SEVENWHITESPACES = "       ";
+    std::cout <<std::endl<<"*****Color Coding Reference Manual*****"<<std::endl<< "PairNumber " << "Major"<<c_SINGLEWHITESPACE <<"Minor"<< std::endl;
+    for(uint pairNum = 1; pairNum <= c_MAXPAIRNUM; pairNum++)
+    {
+        TelCoColorCoder::ColorPair currentColorPair = TelCoColorCoder::GetColorFromPairNumber(pairNum);
+        if(pairNum < c_TWODIGITSTARTINGINDEX)
+        {
+            std::cout <<c_FOURWHITESPACES<<pairNum<<c_SEVENWHITESPACES<<currentColorPair.ToString()<< std::endl;
+        }
+        else
+        {
+            std::cout <<c_THREEWHITESPACES<<pairNum<<c_SEVENWHITESPACES<< currentColorPair.ToString()<< std::endl;
+        }     
+    }
+}
 int main() {
     testNumberToPair(4, TelCoColorCoder::WHITE, TelCoColorCoder::BROWN);
     testNumberToPair(5, TelCoColorCoder::WHITE, TelCoColorCoder::SLATE);

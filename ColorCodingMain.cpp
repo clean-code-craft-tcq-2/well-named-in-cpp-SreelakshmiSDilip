@@ -24,9 +24,9 @@ void PrintColorCodingReferenceManual()
     const int c_TWODIGITSTARTINGINDEX = 10;
     const std::string c_FOURWHITESPACES  = "    ";
     const std::string c_THREEWHITESPACES = "   ";
-    const std::string c_SINGLEWHITESPACE = "  ";
+    const std::string c_TWOWHITESPACES = "   ";
     const std::string c_SEVENWHITESPACES = "       ";
-    std::cout <<std::endl<<"*****Color Coding Reference Manual*****"<<std::endl<< "PairNumber " << "Major"<<c_SINGLEWHITESPACE <<"Minor"<< std::endl;
+    std::cout <<std::endl<<"*****Color Coding Reference Manual*****"<<std::endl<< "PairNumber " << "Major"<<c_TWOWHITESPACES <<"Minor"<< std::endl;
     for(uint pairNum = 1; pairNum <= c_MAXPAIRNUM; pairNum++)
     {
         TelCoColorCoder::ColorPair currentColorPair = TelCoColorCoder::GetColorFromPairNumber(pairNum);

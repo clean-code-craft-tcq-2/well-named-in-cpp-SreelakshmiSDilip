@@ -2,7 +2,6 @@
 #include <assert.h>
 #include "ColorCode.h"
 
-
 void testNumberToPair(int pairNumber,
     TelCoColorCoder::MajorColor expectedMajor,
     TelCoColorCoder::MinorColor expectedMinor)
@@ -43,18 +42,14 @@ void testPairToNumber(
 		     else
 		     {
 		         std::cout <<c_THREEWHITESPACES<<pairNum<<c_SEVENWHITESPACES<< currentColorPair.ToString()<< std::endl;
-		     }
-		     
+		     }     
 	     }
      }
-
 int main() {
     testNumberToPair(4, TelCoColorCoder::WHITE, TelCoColorCoder::BROWN);
     testNumberToPair(5, TelCoColorCoder::WHITE, TelCoColorCoder::SLATE);
-
     testPairToNumber(TelCoColorCoder::BLACK, TelCoColorCoder::ORANGE, 12);
     testPairToNumber(TelCoColorCoder::VIOLET, TelCoColorCoder::SLATE, 25);
     PrintColorCodingReferenceManual();
-
     return 0;
 }

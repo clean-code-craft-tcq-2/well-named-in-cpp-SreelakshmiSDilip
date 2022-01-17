@@ -23,7 +23,7 @@ void testColorCodingReferenceManual(int rowNumber, std::string expectedPairNumbe
 {
     TelCoColorCoder::PrintColorCodingReferenceManual();
     std:: string actualPairNumberandColor = TelCoColorCoder::GetCombinedPairNumandColorString(rowNumber);
-    assert(std::string::compare(actualPairNumberandColor,expectedPairNumberandColor) == 0);
+    assert(actualPairNumberandColor.compare(expectedPairNumberandColor) == 0);
     
     
 }

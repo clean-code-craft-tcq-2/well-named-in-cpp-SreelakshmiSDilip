@@ -13,6 +13,11 @@ namespace TelCoColorCoder
     const std::string threeSpaces = "    ";
     const std::string twoSpaces = "  ";
     const std::string singleSpace = " ";
+    const std::string fiveSpaces  = "     ";
+    const std::string sixSpaces   = "      ";
+    const int c_MAXPAIRNUM = 25;
+    const int c_TWODIGITSTARTINGINDEX = 10;
+
 
 
     class ColorPair {

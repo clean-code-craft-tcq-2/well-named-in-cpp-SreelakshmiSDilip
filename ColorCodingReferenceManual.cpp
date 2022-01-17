@@ -17,7 +17,7 @@ namespace TelCoColorCoder
                 insertSpace = sixSpaces;
             }
 
-                std::cout <<insertSpace<<pairNum<<sixSpaces<<currentColorPairString<< std::endl;
+            std::cout <<insertSpace<<pairNum<<sixSpaces<<currentColorPairString<< std::endl;
     
         }
     }

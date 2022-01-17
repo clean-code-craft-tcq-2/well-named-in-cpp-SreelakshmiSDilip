@@ -1,6 +1,6 @@
 #include <iostream>
 #include <assert.h>
-#include <string.h>
+#include <cstring.h>
 #include "ColorCode.h"
 
 void testNumberToPair(int pairNumber,TelCoColorCoder::MajorColor expectedMajor,TelCoColorCoder::MinorColor expectedMinor)
@@ -23,7 +23,7 @@ void testColorCodingReferenceManual(int rowNumber, std::string expectedPairNumbe
 {
     TelCoColorCoder::PrintColorCodingReferenceManual();
     std:: string actualPairNumberandColor = TelCoColorCoder::GetCombinedPairNumandColorString(rowNumber);
-    assert(compare (actualPairNumberandColor,expectedPairNumberandColor) == 0);
+    assert(strcmp(actualPairNumberandColor,expectedPairNumberandColor) == 0);
     
     
 }

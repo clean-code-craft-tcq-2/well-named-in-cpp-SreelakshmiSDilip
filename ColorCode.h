@@ -3,10 +3,10 @@ namespace TelCoColorCoder
     enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET};
     enum MinorColor {BLUE, ORANGE, GREEN, BROWN, SLATE};
 
-    const char* MajorColorNames[] = {
+    const char* const MajorColorNames[] = {
         "White", "Red", "Black", "Yellow", "Violet"
     };
-    const char* MinorColorNames[] = {
+    const char* const MinorColorNames[] = {
         "Blue", "Orange", "Green", "Brown", "State"
     };
     //Constants are declared for inserting whitespaces accordingly for proper formatting

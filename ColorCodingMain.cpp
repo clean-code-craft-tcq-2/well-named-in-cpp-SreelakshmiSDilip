@@ -18,15 +18,17 @@ void testPairToNumber(TelCoColorCoder::MajorColor major,TelCoColorCoder::MinorCo
     assert(pairNumber == expectedPairNumber);
 }
 
-void testColorCodingReferenceManual()
+void testColorCodingReferenceManual(int rowNumber, std::string expectedPairNumberandColor)
 {
     TelCoColorCoder::PrintColorCodingReferenceManual();
+    
+    
 }
 int main() {
     testNumberToPair(4, TelCoColorCoder::WHITE, TelCoColorCoder::BROWN);
     testNumberToPair(5, TelCoColorCoder::WHITE, TelCoColorCoder::SLATE);
     testPairToNumber(TelCoColorCoder::BLACK, TelCoColorCoder::ORANGE, 12);
     testPairToNumber(TelCoColorCoder::VIOLET, TelCoColorCoder::SLATE, 25);
-    testColorCodingReferenceManual();
+    testColorCodingReferenceManual(6, );
     return 0;
 }

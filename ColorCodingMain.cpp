@@ -21,8 +21,8 @@ void testPairToNumber(TelCoColorCoder::MajorColor major,TelCoColorCoder::MinorCo
 void testColorCodingReferenceManual(int rowNumber, std::string expectedPairNumberandColor)
 {
     TelCoColorCoder::PrintColorCodingReferenceManual();
-    getActualPairNumberandColor = TelCoColorCoder::GetCombinedPairNumandColorString();
-    assert(strcmp(getActualPairNumberandColor,expectedPairNumberandColor) == 0);
+    std:: string actualPairNumberandColor = TelCoColorCoder::GetCombinedPairNumandColorString();
+    assert(strcmp(actualPairNumberandColor,expectedPairNumberandColor) == 0);
     
     
 }

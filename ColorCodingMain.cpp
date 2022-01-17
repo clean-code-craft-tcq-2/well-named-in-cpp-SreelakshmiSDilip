@@ -6,7 +6,7 @@
 void testNumberToPair(int pairNumber,TelCoColorCoder::MajorColor expectedMajor,TelCoColorCoder::MinorColor expectedMinor)
 {
     TelCoColorCoder::ColorPair colorPair =
-        TelCoColorCoder::GetColorFromPairNumber(pairNumber);
+    TelCoColorCoder::GetColorFromPairNumber(pairNumber);
     std::cout << "Got pair " << colorPair.ToString() << std::endl;
     assert(colorPair.getMajor() == expectedMajor);
     assert(colorPair.getMinor() == expectedMinor);
@@ -23,7 +23,6 @@ void testColorCodingReferenceManual(int rowNumber, std::string expectedPairNumbe
 {
     TelCoColorCoder::PrintColorCodingReferenceManual();
     std:: string actualPairNumberandColor = TelCoColorCoder::GetCombinedPairNumandColorString(rowNumber);
-    std::cout << actualPairNumberandColor <<std::endl <<expectedPairNumberandColor <<std::endl;
     assert(actualPairNumberandColor.compare(expectedPairNumberandColor) == 0);
     
     

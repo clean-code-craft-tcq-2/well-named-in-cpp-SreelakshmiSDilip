@@ -3,7 +3,16 @@ namespace TelCoColorCoder
     enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET};
     enum MinorColor {BLUE, ORANGE, GREEN, BROWN, SLATE};
 
-
+    const char* MajorColorNames[] = {
+        "White", "Red", "Black", "Yellow", "Violet"
+    };
+    const char* MinorColorNames[] = {
+        "Blue", "Orange", "Green", "Brown", "State"
+    };
+    //Constants are declared for inserting whitespaces accordingly for proper formatting
+    const std::string threeSpaces = "    ";
+    const std::string twoSpaces = "  ";
+    const std::string singleSpace = " ";
 
 
     class ColorPair {

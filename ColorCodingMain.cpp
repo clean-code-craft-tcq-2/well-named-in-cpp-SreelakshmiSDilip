@@ -18,31 +18,16 @@ void testPairToNumber(TelCoColorCoder::MajorColor major,TelCoColorCoder::MinorCo
     assert(pairNumber == expectedPairNumber);
 }
 
-void PrintColorCodingReferenceManual()
+void testColorCodingReferenceManual()
 {
-    const int c_MAXPAIRNUM = 25;
-    const int c_TWODIGITSTARTINGINDEX = 10;
-    const std::string fiveSpaces  = "     ";
-    const std::string sixSpaces   = "      ";
-    std::cout <<std::endl<<"*****Color Coding Reference Manual*****"<<std::endl<< "  PairNumber Major  Minor"<< std::endl;
-    for(uint pairNum = 1; pairNum <= c_MAXPAIRNUM; pairNum++)
-    {
-        TelCoColorCoder::ColorPair currentColorPair = TelCoColorCoder::GetColorFromPairNumber(pairNum);
-        if(pairNum < c_TWODIGITSTARTINGINDEX)
-        {
-            std::cout <<sixSpaces<<pairNum<<sixSpaces<<currentColorPair.ToString()<< std::endl;
-        }
-        else
-        {
-            std::cout <<fiveSpaces<<pairNum<<sixSpaces<< currentColorPair.ToString()<< std::endl;
-        }     
-    }
+    TelCoColorCoder::PrintColorCodingReferenceManual();
 }
+
 int main() {
     testNumberToPair(4, TelCoColorCoder::WHITE, TelCoColorCoder::BROWN);
     testNumberToPair(5, TelCoColorCoder::WHITE, TelCoColorCoder::SLATE);
     testPairToNumber(TelCoColorCoder::BLACK, TelCoColorCoder::ORANGE, 12);
     testPairToNumber(TelCoColorCoder::VIOLET, TelCoColorCoder::SLATE, 25);
-    PrintColorCodingReferenceManual();
+    testColorCodingReferenceManual();
     return 0;
 }

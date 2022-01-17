@@ -1,5 +1,5 @@
 
-#include"TestColorCoding.h"
+#include "TestColorCoding.h"
 
 void testNumberToPair(int pairNumber,TelCoColorCoder::MajorColor expectedMajor,TelCoColorCoder::MinorColor expectedMinor)
 {

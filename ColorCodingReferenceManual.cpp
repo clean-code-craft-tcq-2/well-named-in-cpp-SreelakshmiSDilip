@@ -3,7 +3,7 @@
 
 namespace TelCoColorCoder
 {
-    std::string GetCurrentPairNumString(int pairNum)
+    std::string GetCombinedPairNumandColorString(int pairNum)
     {
             ColorPair currentColorPair = TelCoColorCoder::GetColorFromPairNumber(pairNum);
             std::string currentColorPairString = currentColorPair.ToString();
@@ -22,8 +22,8 @@ namespace TelCoColorCoder
         std::cout <<std::endl<<"*****Color Coding Reference Manual*****"<<std::endl<< "  PairNumber Major  Minor"<< std::endl;
         for(uint pairNum = 1; pairNum <= c_MAXPAIRNUM; pairNum++)
         {
-           
-            std::cout <<GetCurrentPairNumString(pairNum)<< std::endl;
+           std::string strCurrentRowEntry = GetCombinedPairNumandColorString(pairNum);
+           std::cout <<strCurrentRowEntry<< std::endl;
     
         }
     }

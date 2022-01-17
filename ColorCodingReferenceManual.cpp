@@ -11,14 +11,14 @@ namespace TelCoColorCoder
         {
             ColorPair currentColorPair = TelCoColorCoder::GetColorFromPairNumber(pairNum);
             std::string currentColorPairString = currentColorPair.ToString();
+            std::string whiteSpace = fiveSpaces;
             if(pairNum < c_TWODIGITSTARTINGINDEX)
             {
-                std::cout <<sixSpaces<<pairNum<<sixSpaces<<currentColorPairString<< std::endl;
+                whiteSpace = sixSpaces;
             }
-            else
-            {
-                std::cout <<fiveSpaces<<pairNum<<sixSpaces<<currentColorPairString<< std::endl;
-            }     
+
+                std::cout <<whiteSpace<<pairNum<<sixSpaces<<currentColorPairString<< std::endl;
+    
         }
     }
 }

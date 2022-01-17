@@ -46,12 +46,15 @@ namespace TelCoColorCoder
     {
             ColorPair currentColorPair = TelCoColorCoder::GetColorFromPairNumber(pairNum);
             std::string currentColorPairString = currentColorPair.ToString();
+            std:: stringstream ss;
+            ss<<pairNum;
+            std::string pairNumString = ss.str();
             std::string insertSpace = fiveSpaces;
             if(pairNum < c_TWODIGITSTARTINGINDEX)
             {
                 insertSpace = sixSpaces;
             }
-            std::string pairNumandColorPair = insertSpace + pairNum + sixSpaces + currentColorPairString;
+            std::string pairNumandColorPair = insertSpace + pairNumString + sixSpaces + currentColorPairString;
             return pairNumandColorPair;
                
     }

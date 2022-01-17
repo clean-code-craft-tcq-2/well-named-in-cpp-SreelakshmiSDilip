@@ -3,19 +3,7 @@
 
 namespace TelCoColorCoder
 {
-    std::string GetCombinedPairNumandColorString(int pairNum)
-    {
-            ColorPair currentColorPair = TelCoColorCoder::GetColorFromPairNumber(pairNum);
-            std::string currentColorPairString = currentColorPair.ToString();
-            std::string insertSpace = fiveSpaces;
-            if(pairNum < c_TWODIGITSTARTINGINDEX)
-            {
-                insertSpace = sixSpaces;
-            }
-            std::string pairNumandColorPair = insertSpace + pairNum + sixSpaces + currentColorPairString;
-            return pairNumandColorPair;
-               
-    }
+
     void PrintColorCodingReferenceManual()
     {
 

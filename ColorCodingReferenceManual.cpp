@@ -1,20 +1,23 @@
 #include <iostream>
 #include "ColorCode.h"
 
-void PrintColorCodingReferenceManual()
+namespace TelCoColorCoder
 {
-
-    std::cout <<std::endl<<"*****Color Coding Reference Manual*****"<<std::endl<< "  PairNumber Major  Minor"<< std::endl;
-    for(uint pairNum = 1; pairNum <= c_MAXPAIRNUM; pairNum++)
+    void PrintColorCodingReferenceManual()
     {
-        TelCoColorCoder::ColorPair currentColorPair = TelCoColorCoder::GetColorFromPairNumber(pairNum);
-        if(pairNum < c_TWODIGITSTARTINGINDEX)
+
+        std::cout <<std::endl<<"*****Color Coding Reference Manual*****"<<std::endl<< "  PairNumber Major  Minor"<< std::endl;
+        for(uint pairNum = 1; pairNum <= c_MAXPAIRNUM; pairNum++)
         {
-            std::cout <<sixSpaces<<pairNum<<sixSpaces<<currentColorPair.ToString()<< std::endl;
+            TelCoColorCoder::ColorPair currentColorPair = TelCoColorCoder::GetColorFromPairNumber(pairNum);
+            if(pairNum < c_TWODIGITSTARTINGINDEX)
+            {
+                std::cout <<sixSpaces<<pairNum<<sixSpaces<<currentColorPair.ToString()<< std::endl;
+            }
+            else
+            {
+                std::cout <<fiveSpaces<<pairNum<<sixSpaces<< currentColorPair.ToString()<< std::endl;
+            }     
         }
-        else
-        {
-            std::cout <<fiveSpaces<<pairNum<<sixSpaces<< currentColorPair.ToString()<< std::endl;
-        }     
     }
 }

@@ -1,16 +1,10 @@
-#include <iostream>
-#include <assert.h>
 #include <string>
 #include "ColorCode.h"
 
 namespace TelCoColorCoder
 {
-
-    int numberOfMajorColors =
-        sizeof(MajorColorNames) / sizeof(MajorColorNames[0]);
-
-    int numberOfMinorColors =
-        sizeof(MinorColorNames) / sizeof(MinorColorNames[0]);
+  int numberOfMajorColors = sizeof(MajorColorNames) / sizeof(MajorColorNames[0]);
+  int numberOfMinorColors = sizeof(MinorColorNames) / sizeof(MinorColorNames[0]);
 
     std::string ColorPair:: ToString() {
         std::string colorPairStr = MajorColorNames[majorColor];
